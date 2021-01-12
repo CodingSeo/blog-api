@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class Documentation extends Controller
 {
 
-    public function document(Request $request)
+    public function test()
     {
-        var_dump('test');
+
     }
 }
