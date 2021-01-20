@@ -16,3 +16,5 @@ use \App\Http\Controllers\Documentation;
 */;
 Route::get('/test', [Documentation::class, 'test']);
 
+
+

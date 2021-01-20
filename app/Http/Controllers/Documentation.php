@@ -13,6 +13,6 @@ class Documentation extends Controller
 
     public function test()
     {
-
+        echo('test');
     }
 }
