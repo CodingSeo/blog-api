@@ -14,6 +14,7 @@ use \App\Http\Controllers\Documentation;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */;
+
 Route::get('/test', [Documentation::class, 'test']);
 
 
