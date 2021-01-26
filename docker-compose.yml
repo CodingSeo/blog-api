@@ -2,19 +2,12 @@ version: "3.1"
 services:
     php:
         image: hiworks/develop-api:7.4
-<<<<<<< HEAD
         container_name: blog-api-docker
         working_dir: /var/www
-=======
-        container_name: blog-api
->>>>>>> 0a235986130df6d8a4bbc841e4f00f334d91c2a0
         volumes:
             - .:/var/www
             - ./apache2/default.conf:/etc/apache2/sites-enabled/default.conf
         ports:
-<<<<<<< HEAD
-            - "8088:80"
-=======
             - "8080:80"
     db:
       container_name: mysql5
@@ -30,4 +23,3 @@ services:
         MYSQL_PASSWORD: devpass
       ports:
           - "6033:3306"
->>>>>>> 0a235986130df6d8a4bbc841e4f00f334d91c2a0
