@@ -13,8 +13,6 @@ class BasicInfo extends Migration
      */
     public function up()
     {
-        //
-
         \Illuminate\Support\Facades\DB::connection('mysql');
         config(['database.connections.mysql.database' => 'admin']);
         Schema::dropIfExists('basic_info');
