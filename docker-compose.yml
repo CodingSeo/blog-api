@@ -9,7 +9,7 @@ services:
             - .:/var/www
             - ./apache2/default.conf:/etc/apache2/sites-enabled/default.conf
         ports:
-            - "8080:80"
+            - "8888:80"
         networks:
           - app-network
 
@@ -22,11 +22,13 @@ services:
       restart: unless-stopped
       environment:
         MYSQL_ROOT_PASSWORD: root
-        MYSQL_DATABASE: test_db
+        MYSQL_DATABASE: todo_list
         MYSQL_USER: devuser
         MYSQL_PASSWORD: devpass
+      volumes:
+        - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
       ports:
-        - "6033:3306"
+        - "6666:3306"
       networks:
         - app-network
 
