@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61abc0d25c5880605a596ab8eb576c0e",
+    "content-hash": "26865d9dd544850cfd642645e872933c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1451,6 +1451,43 @@
             "time": "2020-10-22T13:57:20+00:00"
         },
         {
+            "name": "gabia/laravel-dto",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.gabia.com:composer/laravel-dto.git",
+                "reference": "8ccc384f3618c72c6047e324fb7b7cfe8d5ba728"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://satis.gabia.com/dist/gabia/laravel-dto/gabia-laravel-dto-1.0.7-c7b66f.tar",
+                "reference": "8ccc384f3618c72c6047e324fb7b7cfe8d5ba728",
+                "shasum": "95489c3deea13cc5922b5633c7311294b499fdfc"
+            },
+            "require": {
+                "netresearch/jsonmapper": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gabia\\LaravelDto\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Gabia\\LaravelDto\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Dennis",
+                    "email": "bjh@gabia.com"
+                }
+            ],
+            "description": "Laravel DTO Package",
+            "time": "2020-03-05T01:29:24+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.0.1",
             "source": {
@@ -1828,16 +1865,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.25.0",
+            "version": "v8.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "05da44d6823c2923597519ac10151f5827a24f80"
+                "reference": "275c78c97e007e4a9d771d4d1caa1c77ebfdcf94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/05da44d6823c2923597519ac10151f5827a24f80",
-                "reference": "05da44d6823c2923597519ac10151f5827a24f80",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/275c78c97e007e4a9d771d4d1caa1c77ebfdcf94",
+                "reference": "275c78c97e007e4a9d771d4d1caa1c77ebfdcf94",
                 "shasum": ""
             },
             "require": {
@@ -1988,7 +2025,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2021-01-26T14:40:21+00:00"
+            "time": "2021-02-02T14:07:24+00:00"
         },
         {
             "name": "laravel/telescope",
@@ -2532,6 +2569,52 @@
                 }
             ],
             "time": "2021-01-26T20:46:41+00:00"
+        },
+        {
+            "name": "netresearch/jsonmapper",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweiske/jsonmapper.git",
+                "reference": "e0f1e33a71587aca81be5cffbb9746510e1fe04e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/e0f1e33a71587aca81be5cffbb9746510e1fe04e",
+                "reference": "e0f1e33a71587aca81be5cffbb9746510e1fe04e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-spl": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35 || ~5.7 || ~6.4 || ~7.0",
+                "squizlabs/php_codesniffer": "~3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonMapper": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "cweiske@cweiske.de",
+                    "homepage": "http://github.com/cweiske/jsonmapper/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Map nested JSON structures onto PHP classes",
+            "time": "2020-04-16T18:48:43+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -6037,16 +6120,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.5.9",
+            "version": "2.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "66b3138ecce38024723fb3bfc66ef8852a779ea9"
+                "reference": "98154e8b991fb616304c213cd405299ffedc26f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/66b3138ecce38024723fb3bfc66ef8852a779ea9",
-                "reference": "66b3138ecce38024723fb3bfc66ef8852a779ea9",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/98154e8b991fb616304c213cd405299ffedc26f5",
+                "reference": "98154e8b991fb616304c213cd405299ffedc26f5",
                 "shasum": ""
             },
             "require": {
@@ -6104,7 +6187,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2021-01-26T14:45:19+00:00"
+            "time": "2021-02-02T10:15:48+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -7190,16 +7273,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.1",
+            "version": "9.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360"
+                "reference": "f661659747f2f87f9e72095bb207bceb0f151cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7bdf4085de85a825f4424eae52c99a1cec2f360",
-                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f661659747f2f87f9e72095bb207bceb0f151cb4",
+                "reference": "f661659747f2f87f9e72095bb207bceb0f151cb4",
                 "shasum": ""
             },
             "require": {
@@ -7285,7 +7368,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-17T07:42:25+00:00"
+            "time": "2021-02-02T14:45:58+00:00"
         },
         {
             "name": "sebastian/cli-parser",

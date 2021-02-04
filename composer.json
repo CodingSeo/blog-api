@@ -6,6 +6,16 @@
         "framework",
         "laravel"
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.gabia.com/repository/composer-repository"
+        },
+        {
+            "type": "composer",
+            "url": "https://satis.gabia.com"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.2|^8.0",
@@ -17,7 +27,8 @@
         "laravel/framework": "^8.12",
         "laravel/telescope": "^4.4",
         "laravel/tinker": "^2.5",
-        "zircote/swagger-php": "^3.1"
+        "zircote/swagger-php": "^3.1",
+        "gabia/laravel-dto": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

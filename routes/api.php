@@ -25,9 +25,6 @@ Route::get('test-find', function(EntityManagerInterface $em){
     return $task;
 });
 
-Route::get('test-find', function(EntityManagerInterface $em){
-    $task = $em->getRepository(Task::class)->findAll();
-    return $task;
+Route::get('test', function(EntityManagerInterface $em){
+    dd(config('database.connections.sqlite.database'));
 });
-
-
